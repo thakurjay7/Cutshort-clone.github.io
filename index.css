@@ -1,0 +1,599 @@
+/* Normalize Css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Navbar container Style */
+.cutshort-navbar{
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 9px -1px;
+    position: sticky;
+    z-index: 15;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0px 10% 0px 0px;
+
+}
+/* Nav-Main Netflix Logo */
+.cutshort-logo{
+    width: 156px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 300px;
+}
+/* Other Navbar Items  */
+.navbar-items{
+    display: flex;
+    gap: 15px;
+    margin-left: 50px;
+    cursor: pointer;
+    
+}
+/* Buttons */
+.button-1{
+    margin-left: 10px;
+    width: 100px;
+    height: 32px;
+    background-color: #5851D3;
+    border-radius: 50px;
+    padding: 7px 10px 7px 13px;
+    cursor: pointer;
+}
+.button-2{
+    margin-left: 10px;
+    width: 110px;
+    height: 32px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 7px 10px 7px 13px;
+    cursor: pointer;
+    color: #5851D3;
+    border: 1px #5851D3 solid;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* Sticky Navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/* Hero Banner */
+.bg-1{
+    width: 1519.2px;
+    height: 700px;
+    object-fit: cover;
+    background: #5851D3;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%,0% 90%);
+    
+}
+.main-content{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px ;
+
+
+}
+/* First Heading */
+.first-heading{
+    width: 900px;
+    height: 60px;
+    font-size: 28px;
+    color: #ffffff;
+    
+}
+.second-heading{
+    width: 900px;
+    height: 72px;
+    margin: 1px 0px 0px 0px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+/* Email & Get Started Box Style */
+.box{
+    width: 871px;
+    height: 57px;
+    display: flex;
+    margin-left: 27%;
+}
+.get-started-1{
+    border: none;
+    width: 201.25px;
+    height: 56px;
+    background-color: #ffffff;
+    color: #5851D3;
+    padding: 12px 24px;
+    font-size: 24px;
+    margin: 0px 0px 0px 8px;
+    border-radius: 50px;
+    font-weight: 550;
+    cursor: pointer;
+}
+.get-started-2{
+    border: 1px #ffffff solid;
+    width: 201.25px;
+    height: 56px;
+    background-color: #5851D3;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 24px;
+    margin: 0px 0px 0px 8px;
+    border-radius: 50px;
+    font-weight: 550;
+    cursor: pointer;
+}
+/* Second Banner */
+.second-banner{
+    width: 1536px;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+.box-1{
+    padding-right: 40px;
+}
+.box-1 p{
+    font-size: 25px;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    padding-bottom: 30px;
+}
+.box-2 p{
+    font-size: 25px;
+    color: #5851D3;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.box-1 img{
+    width: 450px;
+    height: 450px;
+}
+.box-2 img{
+    width: 450px;
+    height: 450px;
+}
+.text{
+    font-size: 40px;
+    font-weight: b;
+    position: absolut;
+    top: 200%;
+    color: black;
+    left: 30%;
+    text-align: center;
+    margin: 30px 0px 50px 0px;
+}
+
+
+#logo{
+    background-color: #c0c0c03e;
+    padding: 0px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%,0% 85%);/* (w h) */
+    padding: 40px 15px 70px 15px;
+
+}
+/* Logo carousel section */
+.logo-carousel {
+    overflow: hidden;
+    width: 100%;
+    height: 160px; /* Adjust the height as needed */
+}
+
+/* Wrapper to hold logos */
+.logo-wrapper {
+    
+    display: flex;
+    animation: moveLogos 20s linear infinite; /* Adjust the animation duration as needed */
+}
+
+/* Individual logo */
+.logo-wrapper img {
+    width: 100px; /* Adjust the width of each logo */
+    height: auto;
+    margin: 10px; /* Adjust the spacing between logos */
+    border-radius: 50px;
+    background: transparent;
+    z-index: 10;
+}
+
+/* Keyframes for animation */
+@keyframes moveLogos {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.logo-carousel-left .logo-wrapper {
+    animation-direction: reverse; /* Reverses the animation direction */
+}
+
+/* Third Banner */
+.third-banner{
+    width: 1536px;
+    height: 900px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%,0% 100%);
+}
+.third-banner h1{
+    text-align: center;
+    margin: 100px 0px;
+    font-size: 35px;
+}
+/* Part 1 */
+.aboutCutShort{
+    display: flex;
+    width: 1100px;
+    height: 280px;
+    margin: 10px 0px 0px 16%;
+}
+.button-3{
+    border: none;
+    width: 160px;
+    height: 35px;
+    background-color: #5851D3;
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.button-4{
+    border: 1px #5851D3 solid;
+    width: 127px;
+    height: 35px;
+    background-color: #ffffff;
+    color: #5851D3;
+    font-size: 15px;
+    margin: 0px 0px 0px 8px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.box-3 h3{
+    font-size: 26px;
+    color: #2bb290;
+    letter-spacing: 0.2rem;
+}
+.box-3 p{
+    font-size: 13px;
+    font-weight: normal;
+    color: #666565;
+}
+/* Box containing the image and video */
+.box-4 {
+    margin-left: 120px;
+}
+
+/* Part 2 */
+.aboutCutShort-1{
+    display: flex;
+    width: 1100px;
+    height: 280px;
+    margin: 7% 0px 0px 16%;
+}
+.box-6 h3{
+    font-size: 26px;
+    color: rgb(230, 126, 34);
+    letter-spacing: 0.2rem;
+}
+.box-6 p{
+    font-size: 13px;
+    font-weight: normal;
+    color: #666565;
+}
+.box-6 {
+    margin-left: 120px;
+}
+/* Fourth Banner */
+.fourth-banner{
+    background: #a4a4a41c;
+    justify-content: center;
+    text-align: center;
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%,0% 100%);
+    padding: 15%;
+    position: relativ;
+    display: block;
+}
+.fourth-banner h1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.fourth-banner p{
+    color: #999999;
+    font-size: 20px;
+    margin: 50px;
+}
+.fourth-banner-img-1 img{
+    width: 140px;
+    height: 60px;
+    opacity: 0.6;
+    margin: 15px;
+}
+.prev-btn,.next-btn{
+    margin: 10px;
+    width: 130px;
+    height: 50px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #5751d3da;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(139, 139, 139, 0.664);
+}
+
+/* Fifth Banner */
+.fifth-banner{
+    background: #5851D3;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10%;
+    height: 500px;
+
+}
+.fifth-banner h1{
+    font-size: 40px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.fifth-banner p{
+    font-size: 25px;
+    color: #ffffff;
+}
+.get-started-3{
+    border: none;
+    width: 149px;
+    height: 56px;
+    background-color: #ffffff;
+    color: #5851D3;
+    margin: 40px 0px 0px 200%;
+    font-weight: 550;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+/* Footer */
+.footer{
+    background: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    position: relative;
+    
+}
+.footer, .footer a{
+    
+    font-size: 14px;
+    padding: 70px 200px 20px 160px;
+    text-decoration: none;
+}
+.footer-columns{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-gap: 10rem;
+
+
+}
+.footer-columns-1{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-gap: 10rem;
+
+}
+.footer-columns h3, .footer-columns-1 h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 35px 0px ;
+}
+.footer-columns-2 ul{
+    display: flex;
+}
+.footer-columns-2 li{
+    margin: 5px;
+}
+.footer-columns-3 img{
+    margin: 3px;
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}
+.footer li{
+    line-height: 2.5;
+    font-size: 13px;
+}
+.footer li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+/* Desktop Styles (1280px and above) */
+@media only screen and (min-width: 1280px) {
+    /* Add your desktop-specific styles here */
+  }
+  
+  /* Tablet Styles (601px to 1279px) */
+  @media only screen and (min-width: 601px) and (max-width: 1279px) {
+    /* Navbar container Style */
+    .cutshort-navbar {
+      padding: 0 5%;
+    }
+  
+    /* Other Navbar Items  */
+    .navbar-items {
+      margin-left: 20px;
+    }
+  
+    /* Hero Banner */
+    .bg-1 {
+      width: 100%;
+      height: 600px;
+    }
+  
+    /* Main Content */
+    .main-content {
+      top: 30%;
+    }
+  
+    /* First Heading */
+    .first-heading {
+      font-size: 24px;
+    }
+  
+    /* Second Heading */
+    .second-heading {
+      font-size: 20px;
+    }
+  
+    /* Email & Get Started Box Style */
+    .box {
+      width: 80%;
+      margin-left: 10%;
+    }
+  
+    /* Box containing the image and video in Part 1 and Part 2 */
+    .box-4,
+    .box-6 {
+      margin-left: 60px;
+    }
+  
+    /* Part 1 and Part 2 Buttons */
+    .button-3,
+    .button-4 {
+      width: 140px;
+      font-size: 14px;
+    }
+  
+    /* Fourth Banner */
+    .fourth-banner p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Mobile Styles (up to 600px) */
+  @media only screen and (max-width: 600px) {
+    /* Navbar container Style */
+    .cutshort-navbar {
+      padding: 0 3%;
+    }
+  
+    /* Other Navbar Items  */
+    .navbar-items {
+      display: none;
+    }
+  
+    /* Buttons */
+    .button-1,
+    .button-2 {
+      display: none;
+    }
+  
+    /* Main Content */
+    .main-content {
+      top: 25%;
+    }
+  
+    /* First Heading */
+    .first-heading {
+      font-size: 22px;
+    }
+  
+    /* Second Heading */
+    .second-heading {
+      font-size: 18px;
+    }
+  
+    /* Email & Get Started Box Style */
+    .box {
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .get-started-1,
+    .get-started-2 {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    /* Part 1 and Part 2 */
+    .aboutCutShort,
+    .aboutCutShort-1 {
+      flex-direction: column;
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    /* Box containing the image and video in Part 1 and Part 2 */
+    .box-4,
+    .box-6 {
+      margin-left: 0;
+    }
+  
+    /* Part 1 and Part 2 Buttons */
+    .button-3,
+    .button-4 {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    /* Fourth Banner */
+    .fourth-banner p {
+      font-size: 14px;
+    }
+  
+    /* Fifth Banner */
+    .get-started-3 {
+      margin: 20px 0;
+    }
+  
+    /* Footer */
+    .footer-columns {
+      grid-template-columns: 50% 50%;
+      grid-gap: 5rem;
+      padding: 30px;
+    }
+  
+    .footer-columns-1 {
+      grid-template-columns: 50% 50%;
+      grid-gap: 5rem;
+      padding: 30px;
+    }
+  
+    .footer-columns h3,
+    .footer-columns-1 h3 {
+      font-size: 16px;
+    }
+  
+    .footer li {
+      font-size: 12px;
+    }
+  
+    .footer li:hover {
+      text-decoration: none;
+    }
+  }
+  
